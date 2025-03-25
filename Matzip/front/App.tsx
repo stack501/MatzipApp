@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
-  Button,
   SafeAreaView,
   StyleSheet,
   Text,
@@ -9,12 +8,21 @@ import {
 } from 'react-native';
 
 function App(): JSX.Element {
+  const [name, setName] = useState('');
+
+  const handleChangeInput = (text: string) => {
+    console.log(text);
+    setName(text);
+  }
+
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
-        <Text>텍스트</Text>
-        <Button title="버튼이름" onPress={() => console.log('클릭됨!')} />
-        <TextInput />  
+    <SafeAreaView style={styles.container}>
+      <View style={styles.inputContainer}>
+        <Text>이름</Text>
+        <TextInput 
+          style={styles.input}
+          value={name}
+          onChangeText={handleChangeInput}/>  
       </View>
     </SafeAreaView>
   );
@@ -22,8 +30,20 @@ function App(): JSX.Element {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'red',
+    flex: 1,
   },
+  input: {
+    flex: 1,
+    borderWidth: 2,
+    borderColor: 'black',
+    height: 50,
+    width: 100,
+  },
+  inputContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+  }
 });
 
 export default App;
