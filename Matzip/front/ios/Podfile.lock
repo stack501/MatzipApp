@@ -315,6 +315,8 @@ PODS:
   - React-jsinspector (0.72.17)
   - React-logger (0.72.17):
     - glog
+  - react-native-encrypted-storage (4.0.3):
+    - React-Core
   - react-native-safe-area-context (4.10.5):
     - React-Core
   - React-NativeModulesApple (0.72.17):
@@ -437,7 +439,7 @@ PODS:
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
     - ReactCommon/turbomodule/core
-  - RNScreens (4.9.2):
+  - RNScreens (4.0.0):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
     - React-RCTImage
@@ -468,6 +470,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-encrypted-storage (from `../node_modules/react-native-encrypted-storage`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -541,6 +544,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-encrypted-storage:
+    :path: "../node_modules/react-native-encrypted-storage"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   React-NativeModulesApple:
@@ -612,6 +617,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 8dc585381e476c3ff2e9468f444c90c4d1d5b874
   React-jsinspector: 853b8631b908636bb09ef77cb217376c38a0c8ff
   React-logger: 9ca44bb5703bf2355f3c2d2e5e67bfe98ca2dc34
+  react-native-encrypted-storage: db300a3f2f0aba1e818417c1c0a6be549038deb7
   react-native-safe-area-context: a240ad4b683349e48b1d51fed1611138d1bdad97
   React-NativeModulesApple: 2edfcbb25329e3eb5f76eb79d89010de7c1c6f1f
   React-perflogger: 785b0063af5178298a61b54bb46aae9a19c7bbb5
@@ -633,7 +639,7 @@ SPEC CHECKSUMS:
   RNCMaskedView: fbf0642002ce7f1b6cb4e4822a58667f41392ff7
   RNGestureHandler: c29ba5367d3eb162aabbbe46ece33bcc65617a76
   RNReanimated: e71a1d6bb6427f45ea57c5e23f99030129b6db62
-  RNScreens: bb011113a8c758870ff455799da252c7261ca8b0
+  RNScreens: f04da1d235cd8ea93ac52af126080bcad2b0778e
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: ef534101bb891fb09bae657417f34d399c1efe38
 
